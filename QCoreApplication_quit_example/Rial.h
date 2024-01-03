@@ -11,10 +11,10 @@ class Rial : public QObject
 
 public:
     Rial(QObject *parent);
-    ~Rial();
 
-public slots:
-    void closeApp();
+private slots:
+    void SlotEmiter();
 
-private:
+signals:
+    void finished();
 };
